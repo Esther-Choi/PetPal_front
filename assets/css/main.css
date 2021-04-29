@@ -1885,7 +1885,7 @@ ul.actions li:first-child {
 
 #nav {
   text-align: center;
-  height: 4.2em;
+  height: 4.7em;
   cursor: default;
   display: flex;
   justify-content: space-around;
@@ -1893,7 +1893,7 @@ ul.actions li:first-child {
   position: fixed;
   bottom: 0;
   border-top: solid 1px #bfbfbf;
-  background-color: white;
+  -webkit-backface-visibility: hidden;
 }
 
 #nav a {
@@ -2012,7 +2012,7 @@ ul.actions li:first-child {
   padding-left: 15px;
   border-bottom: solid 1px #bfbfbf;
   padding-bottom: 5px;
-  background-color: white;
+  -webkit-backface-visibility: hidden;
 }
 
 #bar a {
@@ -2025,7 +2025,7 @@ ul.actions li:first-child {
 /* main */
 
 #list {
-  height: calc(100vh - 117px);
+  height: calc(100vh - 121px);
   width: 100%;
   margin-top: 34px;
   overflow: scroll;
@@ -2049,8 +2049,8 @@ ul.actions li:first-child {
 }
 
 #list ul li img {
-  width: 87px;
-  height: 87px;
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
   margin-right: 15px;
 }
@@ -2074,10 +2074,6 @@ ul.actions li:first-child {
   font-size: 11px;
   color: #999999;
   font-weight: 400;
-}
-
-#push {
-  height: 300px;
 }
 
 /* Wrapper */
