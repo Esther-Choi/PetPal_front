@@ -1893,6 +1893,7 @@ ul.actions li:first-child {
   position: fixed;
   bottom: 0;
   border-top: solid 1px #bfbfbf;
+  background-color: white;
 }
 
 #nav a {
@@ -2011,6 +2012,7 @@ ul.actions li:first-child {
   padding-left: 15px;
   border-bottom: solid 1px #bfbfbf;
   padding-bottom: 5px;
+  background-color: white;
 }
 
 #bar a {
