@@ -12,14 +12,19 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
-
+	<script src=""//code.jquery.com/jquery-3.4.1.min.js""></script>
+	<body class="is-preload" id="body">
+		<div id="bg"></div>
 		<!-- Wrapper-->
 			<div id="wrapper">	
 				<div id="bar">
 					<div style="display: flex; align-items: center;">
-						<a href="#" style="margin-right: 5px;"><span>용현5동</span></a>
+						<a href="javascript:void(0);" style="margin-right: 5px;" onclick="show()"><span>용현5동</span></a>
 						<i class="fas fa-chevron-down" style="font-size: 10px;"></i>
+						<div class="toolip">
+							<p id="address">용현5동</p>
+							<p id="set">내 동네 설정하기</p>
+						</div>
 					</div>
 					<div style="width: 90px; display: flex; justify-content: space-between;">	
 						<a href=""><i class="fas fa-search" style="font-size: 18px;"></i></a>
@@ -29,7 +34,7 @@
 				</div>
 				<div id="list">
 					<ul>
-						<li style="border-bottom: solid 1px #d9d9d9; padding-bottom: 10px; padding-top: 10px;">
+						<li id="list-content">
 							<img src="images/dog.jpeg" alt="">
 							<div id="content">
 								<span id="title">3시 호수공원 산책해요!</span>
@@ -45,7 +50,7 @@
 							</div>
 						</li>
 						
-						<li style="border-bottom: solid 1px #d9d9d9; padding-bottom: 10px; padding-top: 10px;">
+						<li id="list-content">
 							<img src="images/dog2.jpeg" alt="">
 							<div id="content">
 								<span id="title">저희 밍키랑 애견카페 갈 강아지 구해요~</span>
@@ -60,7 +65,7 @@
 								</ul>
 							</div>
 						</li>
-						<li style="border-bottom: solid 1px #d9d9d9; padding-bottom: 10px; padding-top: 10px;">
+						<li id="list-content">
 							<img src="images/dog3.jpeg" alt="">
 							<div id="content">
 								<span id="title">산책가실분~!</span>
@@ -75,7 +80,7 @@
 								</ul>
 							</div>
 						</li>
-						<li style="border-bottom: solid 1px #d9d9d9; padding-bottom: 10px; padding-top: 10px;">
+						<li id="list-content">
 							<img src="images/dog4.jpeg" alt="">
 							<div id="content">
 								<span id="title">인천대공원 같이 걸어요</span>
@@ -90,7 +95,7 @@
 								</ul>
 							</div>
 						</li>
-						<li style="border-bottom: solid 0.5px #f2f2f2; padding-bottom: 10px; padding-top: 10px;">
+						<li id="list-content">
 							<img src="images/dog5.jpeg" alt="">
 							<div id="content">
 								<span id="title">1살 애기랑 애견카페 갈 애기강아지?</span>
@@ -106,7 +111,7 @@
 							</div>
 						</li>
 					
-						<li style="border-bottom: solid 0.5px #f2f2f2; padding-bottom: 10px; padding-top: 10px;">
+						<li id="list-content">
 							<img src="images/dog5.jpeg" alt="">
 							<div id="content">
 								<span id="title">1살 애기랑 애견카페 갈 애기강아지?</span>
@@ -121,7 +126,7 @@
 								</ul>
 							</div>
 						</li>
-						<li style="border-bottom: solid 0.5px #f2f2f2; padding-bottom: 10px; padding-top: 10px;">
+						<li id="list-content">
 							<img src="images/dog5.jpeg" alt="">
 							<div id="content">
 								<span id="title">1살 애기랑 애견카페 갈 애기강아지?</span>
@@ -140,7 +145,9 @@
 						
 					</ul>
 				</div>
-
+				<a href="#" id="write">
+					<i class="fas fa-plus"></i>
+				</a>
 				<!-- Nav -->
 				<nav id="nav">
 					<a href="#work" class="icon solid" style="color: black !important;"><i class="fas fa-paw"></i><p>홈</p></a>
@@ -149,13 +156,32 @@
 					<a href="#" class="icon brands"><i class="far fa-user"></i><p>나의 펫팔</p></a>
 				</nav>
 			</div>
-
+		
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			
 	</body>
+	<script>
+		var toolip = document.getElementsByClassName('toolip');
+		var body = document.getElementById('body');
+
+		$(document).ready(function(){
+			$(document).bind("touchend", function(){
+				$("#bg").css("visibility", "hidden");
+				$(".toolip").css("visibility", "hidden");
+				// $(".toolip").slideUp();
+			})
+		})
+
+		function show() {
+			$("#bg").css("visibility", "visible");
+			$(".toolip").css("visibility", "visible");
+			// $(".toolip").slideDown();
+
+		}
+	</script>
 </html>
