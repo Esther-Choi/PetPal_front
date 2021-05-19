@@ -1,111 +1,111 @@
 body {
-    font-family: 'Do Hyeon', sans-serif;
+  font-family: "Do Hyeon", sans-serif;
 }
 
-#image img {   
-    width: 90vw;
-    border-radius: 10PX;
-    margin-top: 2em;
+#image img {
+  width: 90vw;
+  border-radius: 10px;
+  margin-top: 2em;
 }
-
 
 /* bar */
 
 /* info */
 
 #info {
-    width: 100%;
-    padding: 10px 0;
-    padding-top: 0;
-    color: black;
-    border-bottom: solid 1px #e6e6e6;
+  width: 100%;
+  padding: 10px 0;
+  padding-top: 0;
+  color: black;
+  border-bottom: solid 1px #e6e6e6;
 }
 
-#info>div {
-    display: flex;
-    align-items: center;
+#info > div {
+  display: flex;
+  align-items: center;
 }
 
 #info #nickname {
-    font-size: 13px;
-    font-weight: 600;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 #info #address {
-    line-height: 1.5;
-    font-size: 11px;
+  line-height: 1.5;
+  font-size: 11px;
 }
 
 #info i {
-    color: #ffd11a;
-    margin-right: 7px;
-    font-size: 13px;
+  color: #ffd11a;
+  margin-right: 7px;
+  font-size: 13px;
 }
 
 /* content */
 
 #content {
-    color: black;
-    text-align: left;
-    width: 100%;
-    margin-top: 10px;
-    overflow: scroll;
+  color: black;
+  text-align: left;
+  width: 100%;
+  margin-top: 10px;
+  overflow: scroll;
 }
 
 #content #title {
-    font-size: 19px;
-    font-weight: 600;
+  font-size: 19px;
+  font-weight: 600;
 }
 
 #content ul {
-    list-style: none; 
-    width: 100%;
-    display: flex;
-    line-height: 1.5;
-  }
-  
+  list-style: none;
+  width: 100%;
+  display: flex;
+  line-height: 1.5;
+}
+
 #content ul li {
-     margin-right: 5px;
-    font-size: 12px;
-    color: #999999;
+  margin-right: 5px;
+  font-size: 12px;
+  color: #999999;
 }
 
 #content #cont {
-    line-height: 1.4;
-    margin-top: 10px;
-    font-size: 15px;
-    width: 100%;
-    word-break: normal;
-    white-space: pre-line;
+  line-height: 1.4;
+  margin-top: 10px;
+  font-size: 15px;
+  width: 100%;
+  word-break: normal;
+  white-space: pre-line;
 }
 
 /* nav */
-.nav{
-    padding-right: 15px;
-    border-top-color: #e6e6e6 !important;
+.nav {
+  padding-right: 15px;
+  border-top-color: #e6e6e6 !important;
 }
 
 .nav i {
-    font-size: 25px;
-    color: black;
+  font-size: 25px;
+  color: black;
 }
 
 .nav #heart {
-    width: 50px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
-    height: 45px;
-    border-right: solid 1px #e6e6e6;
-    padding-right: 35px;
+  width: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  height: 45px;
+  border-right: solid 1px #e6e6e6;
+  padding-right: 35px;
 }
 
-.nav #viewProfile , .nav #chat{
-    font-size: 15px;
-    width: 100px;
-    text-decoration: none;
-    background-color: #ffd11a;
-    opacity: 1 !important;
-    margin-top: 22px;
+.nav #viewProfile,
+.nav #chat {
+  font-size: 15px;
+  width: 100px;
+  text-decoration: none;
+  background-color: #ffd11a;
+  opacity: 1 !important;
+  margin-top: 22px;
 }
