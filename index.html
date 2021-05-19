@@ -10,15 +10,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<script src=""//code.jquery.com/jquery-3.4.1.min.js""></script>
+	<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 	<body class="is-preload" id="body">
-		<div id="bg"></div>
+		<!-- <div id="bg"></div> -->
 		<!-- Wrapper-->
 			<div id="wrapper">	
 				<div id="bar">
-					<div style="display: flex; align-items: center;">
+					<div style="display: flex; align-items: center; position: relative; z-index: 4;">
 						<a href="javascript:void(0);" style="margin-right: 5px;" onclick="show()"><span>용현5동</span></a>
 						<i class="fas fa-chevron-down" style="font-size: 10px;"></i>
 						<div class="toolip">
@@ -35,7 +37,7 @@
 				<div id="list">
 					<ul>
 						<li id="list-content">
-							<img src="images/dog.jpeg" alt="">
+							<a href="view.html"><img src="images/dog.jpeg" alt="">
 							<div id="content">
 								<span id="title">3시 호수공원 산책해요!</span>
 								<ul>
@@ -47,11 +49,11 @@
 									<li><span>&#183;</span></li>
 									<li><span>오늘</span></li>
 								</ul>
-							</div>
+							</div></a>
 						</li>
 						
 						<li id="list-content">
-							<img src="images/dog2.jpeg" alt="">
+							<a href=""><img src="images/dog2.jpeg" alt="">
 							<div id="content">
 								<span id="title">저희 밍키랑 애견카페 갈 강아지 구해요~</span>
 								<ul>
@@ -63,10 +65,10 @@
 									<li><span>&#183;</span></li>
 									<li><span>5월 1일</span></li>
 								</ul>
-							</div>
+							</div></a>
 						</li>
 						<li id="list-content">
-							<img src="images/dog3.jpeg" alt="">
+							<a href=""><img src="images/dog3.jpeg" alt="">
 							<div id="content">
 								<span id="title">산책가실분~!</span>
 								<ul>
@@ -78,10 +80,10 @@
 									<li><span>&#183;</span></li>
 									<li><span>내일</span></li>
 								</ul>
-							</div>
+							</div></a>
 						</li>
 						<li id="list-content">
-							<img src="images/dog4.jpeg" alt="">
+							<a href=""><img src="images/dog4.jpeg" alt="">
 							<div id="content">
 								<span id="title">인천대공원 같이 걸어요</span>
 								<ul>
@@ -93,10 +95,10 @@
 									<li><span>&#183;</span></li>
 									<li><span>5월 3일</span></li>
 								</ul>
-							</div>
+							</div></a>
 						</li>
 						<li id="list-content">
-							<img src="images/dog5.jpeg" alt="">
+							<a href=""><img src="images/dog5.jpeg" alt="">
 							<div id="content">
 								<span id="title">1살 애기랑 애견카페 갈 애기강아지?</span>
 								<ul>
@@ -108,11 +110,11 @@
 									<li><span>&#183;</span></li>
 									<li><span>오늘</span></li>
 								</ul>
-							</div>
+							</div></a>
 						</li>
 					
 						<li id="list-content">
-							<img src="images/dog5.jpeg" alt="">
+							<a href=""><img src="images/dog5.jpeg" alt="">
 							<div id="content">
 								<span id="title">1살 애기랑 애견카페 갈 애기강아지?</span>
 								<ul>
@@ -124,10 +126,10 @@
 									<li><span>&#183;</span></li>
 									<li><span>오늘</span></li>
 								</ul>
-							</div>
+							</div></a>
 						</li>
 						<li id="list-content">
-							<img src="images/dog5.jpeg" alt="">
+							<a href=""><img src="images/dog5.jpeg" alt="">
 							<div id="content">
 								<span id="title">1살 애기랑 애견카페 갈 애기강아지?</span>
 								<ul>
@@ -139,19 +141,19 @@
 									<li><span>&#183;</span></li>
 									<li><span>오늘</span></li>
 								</ul>
-							</div>
+							</div></a>
 						</li>
 					
 						
 					</ul>
 				</div>
-				<a href="#" id="write">
-					<i class="fas fa-plus"></i>
+				<a href="write.html" id="write">
+					<i class="fas fa-pencil-alt"></i>
 				</a>
 				<!-- Nav -->
 				<nav id="nav">
-					<a href="#work" class="icon solid" style="color: black !important;"><i class="fas fa-paw"></i><p>홈</p></a>
-					<a href="#work" class="icon solid"><i class="fas fa-bullhorn"></i><p>커뮤니티</p></a>
+					<a href="index.html" class="icon solid" style="opacity: 1 !important;"><i class="fas fa-paw"></i><p>홈</p></a>
+					<a href="community.html" class="icon solid"><i class="fas fa-bullhorn"></i><p>커뮤니티</p></a>
 					<a href="#contact" class="icon solid"><i class="far fa-comment-alt"></i><p>채팅</p></a>
 					<a href="#" class="icon brands"><i class="far fa-user"></i><p>나의 펫팔</p></a>
 				</nav>

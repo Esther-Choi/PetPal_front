@@ -1,0 +1,26 @@
+#image {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: left;
+}
+
+#image img {
+    border-radius: 50%;
+    width: 40%;
+    margin-top: 0;
+    margin-right: 20px;
+}
+
+#dog-info {
+    width: 60%;
+    line-height: 1.4;
+    color: black;
+    letter-spacing: 1.5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#dog-info .type{
+  background-color: #ffeb99;
+}

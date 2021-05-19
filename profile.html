@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pet Pal</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/view.css" />
+		<link rel="stylesheet" href="assets/css/profile.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<body>
+    <div id="wrapper" style="padding-top: 10px;">
+    <div id="bar" style="border-bottom: none; padding-top: 2px; padding-bottom: 10px; margin-bottom: 0;">
+        <div style="display: flex; align-items: center; position: relative; z-index: 4; justify-content: space-between; width: 100%;">
+            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+            
+        </div>
+        </div>
+        <div style="overflow: scroll !important; width: 100%; height: calc(100vh - 90px); padding-bottom: 15px;">
+
+            <div id="image">
+                <img src="images/dog.jpeg" alt="" width="100%">
+                <div id="dog-info">
+                    <p><span class="type">&nbsp;이름&nbsp;</span> : <span id="name">몽실이</span></p>
+                    <p><span class="type">&nbsp;나이&nbsp;</span> : <span id="name">1</span>살</p>
+                    <p><span class="type">&nbsp;성별&nbsp;</span> : <span id="name">남자</span></p>
+                    <p><span class="type">&nbsp;종류&nbsp;</span> : <span id="name">푸들</span></p>
+                    <p><span class="type">&nbsp;위치&nbsp;</span> : <span id="name">용현5동</span></p>
+                </div>
+            </div>
+            <div id="info">
+                <div>
+                    <i class="fas fa-ghost"></i>
+                    <p id="nickname">키라러버</p>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p id="address">미추홀구 용현5동</p>
+                </div>
+            </div>
+            <div id="content">
+                <p id="title">3시 호수공원 산책가요</p>
+                <ul>
+                    <li><span id="type">푸들</span></li>
+                    <li><span>&#183;</span></li>
+                    <li><span id="age">3살</span></li>
+                    <li><span>&#183;</span></li>
+                    <li><span id="place">호수공원</span></li>
+                    <li><span>&#183;</span></li>
+                    <li><span id="date">오늘</span></li>
+                </ul>
+                <p id="cont">날씨가 너무 좋아서 호수공원 가려구 해요~ 같이 갈 귀여운 아기들은 연락주세요!
+                </p>
+            </div>
+        </div>
+    <!-- Nav -->
+    <nav id="nav" class="nav">
+        <button id="heart" onclick="like()"><i class="far fa-heart like"></i></button>
+            <a href="" id="viewProfile">프로필 보기</a>
+            <a href="" id="chat">채팅하기</a>
+    </nav>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	
+</body>
+<script>
+    	function like(){
+			if($(".like").css("color") == "rgb(255, 209, 26)"){
+				$(".like").css("color", "#737373");
+			}else {
+				$(".like").css("color", "rgb(255, 209, 26)");
+
+			}
+		}
+</script>
+</html>
